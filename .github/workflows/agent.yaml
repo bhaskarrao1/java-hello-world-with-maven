@@ -1,0 +1,9 @@
+jobs:
+- job: YourJobName
+  pool:
+    name: agent-pool
+  demands:
+    - maven
+    - Agent.Version -gtVersion 2.182.1
+  steps:
+  - script: echo This is a sample job
